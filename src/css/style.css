@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    font-size: 62.5%; /* 1rem = 10 px */
+}
+
+body {
+    font-family: 'Koulen', cursive;
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo, .social {
+    width: 25%;
+    cursor: pointer;
+
+}
+
+.menu {
+    width: 50%;
+    
+}
+
+.menu nav a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 2rem;
+    justify-content:space-between;
+
+}
+
+.social i {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-size: 2.5rem;
+    margin: 2rem;
+    justify-content:space-between;
+    cursor: pointer;
+
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 6.4rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    margin-top:2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Akshar', sans-serif;
+    background-color:#000000;
+    width: 31.7rem;
+    height: 10rem;
+    border: none;
+    border-radius: 2.4rem;
+    box-shadow: .4rem .5rem .4rem rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #ffffff;
+
+}
+
+@keyframes anima {
+     0%{
+         transform: scale(1);
+     }
+     100%{
+         transform: scale(1.05);
+     }
+}
+
+button:hover {
+    animation-name: anima;
+    animation-duration: 0.5;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+    cursor: pointer;     
+}
+
+ footer {
+    text-align: center;
+    color: #ffffff;
+    background: url(/src/img/bg.jpg);
+    padding: 3.5rem 0;
+    font-size: 13px;
+    margin: 20px 20px ;
+}
+
+.icones {
+    cursor: pointer;    
+}
