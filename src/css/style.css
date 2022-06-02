@@ -53,7 +53,7 @@ header {
     height: 2.5rem;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    color: #ffffff;
     font-size: 2.5rem;
     margin: 2rem;
     justify-content:space-between;
@@ -93,17 +93,17 @@ button {
 }
 
 @keyframes anima {
-     0%{
+     from {
          transform: scale(1);
      }
-     100%{
+     to {
          transform: scale(1.05);
      }
 }
 
 button:hover {
     animation-name: anima;
-    animation-duration: 0.5;
+    animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction:alternate ;
@@ -116,9 +116,19 @@ button:hover {
     background: url(/src/img/bg.jpg);
     padding: 3.5rem 0;
     font-size: 13px;
-    margin: 20px 20px ;
+    margin: 2rem 2rem ;
 }
 
 .icones {
     cursor: pointer;    
+}
+
+.social-footer i {
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: #ffffff;
+    
 }
